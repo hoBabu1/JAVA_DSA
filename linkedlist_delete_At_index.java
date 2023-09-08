@@ -9,7 +9,7 @@ public class linkedlist_delete_At_index {
         ll.addAtTail(59);
         ll.addAtTail(58);
         ll.Print();
-        ll.delete(5);
+        ll.delete(4);
         ll.Print();
 
     }
@@ -112,6 +112,7 @@ public class linkedlist_delete_At_index {
         {
            head = tail = null;
         }
+
         // for last index 
         else if(size-1 == idx)
         {
@@ -123,6 +124,10 @@ public class linkedlist_delete_At_index {
            prev.next = null;
            tail = prev;
         }
+        else if(idx == 0)
+        {
+            head = head.next;
+        }
         else 
         {
             Node temp2 = head ;
@@ -132,8 +137,7 @@ public class linkedlist_delete_At_index {
             }
             temp2.next = temp2.next.next;
         }
-
-      
+ 
     } 
 }
 }
