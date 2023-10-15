@@ -10,8 +10,7 @@ public class Daimeter_of_Tree
         root.left.right = new Node(5);
         root.right.left = new Node(6);
         root.right.right = new Node(7);
-        System.out.println(diameter(root).dia);
-/// hey 
+        System.out.println(diameter(root).dia); 
     }
     static class Node 
     {
